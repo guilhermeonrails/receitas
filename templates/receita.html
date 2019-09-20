@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="{% static 'img/core-img/salad.png' %}" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="O que está procurando...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <!-- Breaking News -->
+                    <div class="col-12 col-sm-6">
+                        <div class="breaking-news">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="">Boas vindas!</a></li>
+                                    <li><a href="">As melhores receitas</a></li>
+                                    <li><a href="">Você encontra aqui!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Social Info -->
+                    <div class="col-12 col-sm-6">
+                        <div class="top-social-info text-right">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'partials/_navbar.html' %}
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div class="receipe-post-area section-padding-40">
+
+        <!-- Receipe Post Search -->
+        <div class="receipe-post-search mb-80">
+            <div class="container">
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <select name="select1" id="select1">
+                                <option value="1">Comida típica brasileira</option>
+                                <option value="1">Massas</option>
+                                <option value="1">Veganas</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <select name="select1" id="select2">
+                                <option value="1">Feijoada</option>
+                                <option value="1">Lasanha</option>
+                                <option value="1">Berinjela</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <input type="search" name="search" placeholder="Buscar receita">
+                        </div>
+                        <div class="col-12 col-lg-3 text-right">
+                            <button type="submit" class="btn delicious-btn">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Receipe Slider -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="receipe-slider owl-carousel">
+                        <img src="{% static 'img/bg-img/bg5.jpg' %}" alt="">
+                        <img src="{% static 'img/bg-img/bg5.jpg' %}" alt="">
+                        <img src="{% static 'img/bg-img/bg5.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Receipe Content Area -->
+        <div class="receipe-content-area">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="receipe-headline my-5">
+                            <span>5 de Agosto, 2019</span>
+                            <h2>Salada Vegana</h2>
+                            <div class="receipe-duration">
+                                <h6>Preparo: 15 minutos</h6>
+                                <h6>Rendimento: 2 porçoes</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                            <h4>01.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                            <h4>02.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                            <h4>03.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                            <h4>04.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="col-12 col-lg-4">
+                        <div class="ingredients">
+                            <h4>Ingredientes</h4>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">4 Tbsp (57 gr) butter</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">2 large eggs</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">2 yogurt containers granulated sugar</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">1 vanilla or plain yogurt, 170g container</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5">2 yogurt containers unbleached white flour</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                <label class="custom-control-label" for="customCheck6">1.5 yogurt containers milk</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                <label class="custom-control-label" for="customCheck7">1/4 tsp cinnamon</label>
+                            </div>
+
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                <label class="custom-control-label" for="customCheck8">1 cup fresh blueberries </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    {% include 'partials/_footer.html' %}
+{% endblock%}
