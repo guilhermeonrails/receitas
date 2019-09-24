@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pessoas',
     'receitas',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +81,7 @@ DATABASES = {
         'NAME': 'alura_receita',
         'USER': 'postgres',
         'PASSWORD':'12345678',
-        'HOST':'localhost',
+        'HOST':'localhost'
     }
 }
 
@@ -126,3 +127,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'alurareceitas/static')
 ]
+
+# Media folder
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
