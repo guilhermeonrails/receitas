@@ -1,0 +1,31 @@
+#header {
+    height: 50px;
+    background-color: white;
+    color: white
+}
+
+#header a:link, #header a:visited  {
+    color: black;
+}
+
+#brandind h1 {
+    color: black;
+}
+
+a:link 
+a:visited {
+    color: black;
+}
+
+#user-tools {
+    color: black;
+}
+
+div.breadcrumbs {
+    background: black;
+    color: aqua
+}
+
+div.breadcrumbs a{
+    background: black;
+}
