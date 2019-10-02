@@ -1,184 +1,169 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <!-- Preloader -->
-    <div id="preloader">
-        <i class="circle-preloader"></i>
-        <img src="{% static 'img/core-img/salad.png' %}" alt="">
-    </div>
+<!-- Preloader -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+    <img src="{% static 'img/core-img/salad.png' %}" alt="">
+</div>
 
-    <!-- Search Wrapper -->
-    <div class="search-wrapper">
-        <!-- Close Btn -->
-        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+<!-- Search Wrapper -->
+<div class="search-wrapper">
+    <!-- Close Btn -->
+    <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <form action="#" method="post">
-                        <input type="search" name="search" placeholder="O que está procurando...">
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="#" method="post">
+                    <input type="search" name="search" placeholder="O que está procurando...">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
 
-        <!-- Top Header Area -->
-        <div class="top-header-area">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-between">
-                    <!-- Breaking News -->
-                    <div class="col-12 col-sm-6">
-                        <div class="breaking-news">
-                            <div id="breakingNewsTicker" class="ticker">
-                                <ul>
-                                    <li><a href="">Boas vindas!</a></li>
-                                    <li><a href="">As melhores receitas</a></li>
-                                    <li><a href="">Você encontra aqui!</a></li>
-                                </ul>
-                            </div>
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-between">
+                <!-- Breaking News -->
+                <div class="col-12 col-sm-6">
+                    <div class="breaking-news">
+                        <div id="breakingNewsTicker" class="ticker">
+                            <ul>
+                                <li><a href="">Boas vindas!</a></li>
+                                <li><a href="">As melhores receitas</a></li>
+                                <li><a href="">Você encontra aqui!</a></li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Top Social Info -->
-                    <div class="col-12 col-sm-6">
-                        <div class="top-social-info text-right">
-                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
+                <!-- Top Social Info -->
+                <div class="col-12 col-sm-6">
+                    <div class="top-social-info text-right">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        {% include 'partials/_navbar.html' %}
-    </header>
-    <!-- ##### Header Area End ##### -->
+    {% include 'partials/_navbar.html' %}
+</header>
+<!-- ##### Header Area End ##### -->
 
-    <!-- ##### Top Catagory Area Start ##### -->
-    <section class="top-catagory-area section-padding-80-0">
-        <div class="container">
-            <div class="row">
-                <!-- Top Catagory Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-top-catagory">
-                        <img src="{% static 'img/bg-img/bg2.jpg' %}" alt="">
-                        <!-- Content -->
-                        <div class="top-cta-content">
-                            <h3>Bolo de morango</h3>
-                            <h6>Fácil &amp; Delicioso</h6>
-                            <a href="receipe-post.html" class="btn delicious-btn">Ver receita</a>
-                        </div>
+<!-- ##### Top Catagory Area Start ##### -->
+<section class="top-catagory-area section-padding-80-0">
+    <div class="container">
+        <div class="row">
+            <!-- Top Catagory Area -->
+            <div class="col-12 col-lg-6">
+                <div class="single-top-catagory">
+                    <img src="{% static 'img/bg-img/bg2.jpg' %}" alt="">
+                    <!-- Content -->
+                    <div class="top-cta-content">
+                        <h3>Bolo de morango</h3>
+                        <h6>Fácil &amp; Delicioso</h6>
+                        <a href="receipe-post.html" class="btn delicious-btn">Ver receita</a>
                     </div>
                 </div>
-                <!-- Top Catagory Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-top-catagory">
-                        <img src="{% static 'img/bg-img/bg3.jpg'%} " alt="">
-                        <!-- Content -->
-                        <div class="top-cta-content">
-                            <h3>Yakisoba</h3>
-                            <h6>Rápido &amp; Saboroso</h6>
-                            <a href="receipe-post.html" class="btn delicious-btn">Ver receita</a>
-                        </div>
+            </div>
+            <!-- Top Catagory Area -->
+            <div class="col-12 col-lg-6">
+                <div class="single-top-catagory">
+                    <img src="{% static 'img/bg-img/bg3.jpg'%} " alt="">
+                    <!-- Content -->
+                    <div class="top-cta-content">
+                        <h3>Yakisoba</h3>
+                        <h6>Rápido &amp; Saboroso</h6>
+                        <a href="receipe-post.html" class="btn delicious-btn">Ver receita</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ##### Top Catagory Area End ##### -->
+    </div>
+</section>
+<!-- ##### Top Catagory Area End ##### -->
 
-    <!-- ##### Best Receipe Area Start ##### -->
-    <section class="best-receipe-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h3>Melhores receitas</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r1.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Sushi</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r2.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Hamburguer caseiro</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r3.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Suco de morango</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r4.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Sopa Alura</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r5.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Café da manhã saudável</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/r6.jpg' %}" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Salada de frutas</h5>
-                            </a>
-                        </div>
-                    </div>
+<!-- ##### Best Receipe Area Start ##### -->
+<section class="best-receipe-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h3>Melhores receitas</h3>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ##### Best Receipe Area End ##### -->
 
-    {% include 'partials/_footer.html' %}
+        <div class="row">
+            {% if receitas %}
+            {% for receita in receitas %}
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{{ receita.foto_1.url }}" alt="">
+                    <div class="receipe-content">
+                        <a href="{% url 'receita' receita.id %}">
+                            <h5>{{receita.nome_receita}}</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div class="col-12 col-sm-6 col-lg-4">
+                <p>Sem receitas...</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!-- ##### Best Receipe Area End ##### -->
+
+<section class="top-catagory-area section-padding-20-0">
+    <div class="container">
+        {% if receitas.has_other_pages %}
+        <ul class="pagination">
+            {% if receitas.has_previous %}
+            <li class="page-item">
+                <a href="?page={{ receitas.previous_page_number }}" class="page-link">&laquo;</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link">&laquo;</a>
+            </li>
+            {% endif %}
+            {% for i in receitas.paginator.page_range %}
+            {% if receitas.number == i %}
+            <li class="page-item active">
+                <a class="page-link">{{i}}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a href="?page={{i}}" class="page-link">{{i}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% if receitas.has_next %}
+            <li class="page-item">
+                <a href="?page={{ receitas.next_page_number }}" class="page-link">&raquo;</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link">&raquo;</a>
+            </li>
+            {% endif %}
+        </ul>
+        {% endif %}
+    </div>
+</section>
+
+{% include 'partials/_footer.html' %}
 {% endblock %}
