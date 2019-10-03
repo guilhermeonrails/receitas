@@ -64,18 +64,20 @@
     <!-- Receipe Post Search -->
     <div class="receipe-post-search mb-80">
         <div class="container">
-            <form action="#" method="post">
+            <form action="{% url 'buscar' %}">
                 <div class="row">
                     <div class="col-12 col-lg-5">
-                        <select name="select1" id="select1">
+                        <select name="receita" class="form-control">
                             {% for valor, chave in tipos_de_receitas.items %}
                                 <option value="{{ valor }}">{{ chave }}</option>
                             {% endfor %}
                         </select>
                     </div>
+                    <!--
                     <div class="col-12 col-lg-5">
                         <input type="search" name="search" placeholder="Buscar receita">
                     </div>
+                    -->
                     <div class="col-12 col-lg-2 text-right">
                         <button type="submit" class="btn delicious-btn">Buscar</button>
                     </div>
