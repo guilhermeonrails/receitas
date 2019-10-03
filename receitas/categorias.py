@@ -9,6 +9,5 @@ tipos_de_receitas = {
     'massas':'Massas',
     'molhos':'Molhos',
     'salada':'Salada',
-    'sanduiches':'Sanduiches',
-    'sopas':'Sopas'
+    'sanduiches':'Sanduiches'
 } 
